@@ -1,0 +1,438 @@
+html {
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+}
+header {
+    padding-left: 300px;
+}
+
+nav {
+    padding-left: 20px;
+}
+
+main {
+    padding-left: 320px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.modal-footer {
+  z-index: 1;
+}
+@media only screen and (max-width : 992px) {
+    header, footer {
+        padding-left: 0;
+    }
+
+    main {
+        padding-left: 20px;
+    }
+}
+#filters {
+  margin: 0;
+}
+#docList li {
+  padding: 0 37.5px 0 45px;
+}
+#docList li a {
+  font-weight: 400;
+}
+.sidenav li.active a {
+  color: #fff;
+}
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation-add {
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 24px;
+}
+
+#tbodyUser tr .destroy {
+  display: none;
+  position: inherit;
+  top: 0;
+
+  margin-left: -50px;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+
+  font-size: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+}
+
+#tbodyUser tr .destroy:hover {
+  color: #af5b5e;
+}
+
+#tbodyUser tr .destroy:after {
+  content: '×';
+}
+
+#tbodyUser tr:hover .destroy {
+  display: block;
+}
+
+#tbodyStorage tr .destroy {
+  display: none;
+  position: inherit;
+  top: 0;
+
+  margin-left: -50px;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+
+  font-size: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+}
+
+#tbodyStorage tr .destroy:hover {
+  color: #af5b5e;
+}
+
+#tbodyStorage tr .destroy:after {
+  content: '×';
+}
+
+#tbodyStorage tr:hover .destroy {
+  display: block;
+}
+
+#tbodyContractor tr .destroy {
+  display: none;
+  position: inherit;
+  top: 0;
+
+  margin-left: -50px;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+
+  font-size: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+}
+
+#tbodyContractor tr .destroy:hover {
+  color: #af5b5e;
+}
+
+#tbodyContractor tr .destroy:after {
+  content: '×';
+}
+
+#tbodyContractor tr:hover .destroy {
+  display: block;
+}
+
+#showAddedProducts tr th {
+  text-align: center;
+  border: 0.5px solid #000;
+  font-weight: 400;
+}
+#showAddedProducts tr td {
+  text-align: center;
+  line-height: 0.5;
+  border: 0.5px solid #000;
+  font-weight: 400;
+}
+.collapsible-body table tr {
+  border-bottom: 0;
+}
+.collapsible-body table tr th {
+  text-align: center;
+  border: 0.5px solid #000;
+  font-weight: 400;
+}
+.collapsible-body tbody tr td {
+  text-align: center;
+  line-height: 0.5;
+  border: 0.5px solid #000;
+  font-weight: 400;
+}
+span.badge.new {
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+#moveTd tr td {
+  width: 33%;
+}
+
+@-moz-document url-prefix() {
+
+  .sidenav li {
+    max-width: 295px;
+  }
+  .sidenav li a {
+    max-width: 250px;
+  }
+  .sidenav li.active {
+    max-width: 295px;
+  }
+  .sidenav li.active a {
+    max-width: 295px;
+  }
+
+  @media only screen and (min-width: 400px) {
+    #filters {
+      max-width: 38%;
+    }
+    .sidenav li {
+      max-width: 300px;
+    }
+    .sidenav li a {
+      max-width: 300px;
+    }
+  }
+  @media only screen and (min-width: 932px) {
+    #filters {
+      max-width: 31%;
+    }
+    .sidenav li {
+      max-width: 300px;
+    }
+    .sidenav li a {
+      max-width: 300px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 7px;
+  }
+  .btn-floating.btn-large {
+    top: 20px;
+    height: 30px;
+    width: 30px;
+  }
+  .btn-large i {
+    position: inherit;
+    font-size: 1.6rem;
+    bottom: 12px;
+  }
+  #dropdown-sort {
+    width: 110px;
+    padding: 0;
+    font-size: 10px;
+  }
+  .select-wrapper input.select-dropdown {
+    font-size: 9px;
+  }
+  .stripped {
+    margin-left: -17px;
+  }
+  .modal a {
+    font-size: 10px;
+    width: 102px;
+    height: 33px;
+    text-align: center;
+  }
+  .addedProducts table {
+    line-height: 1;
+  }
+  #slide-out {
+    width: 230px;
+  }
+  #docList li {
+    padding: 0 20px 0 7px;
+  }
+  #slide-out ul li a {
+    font-size: 12px;
+  }
+  .datepicker-modal {
+    max-width: 300px;
+  }
+  .datepicker-footer {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 375px) {
+  .select-wrapper input.select-dropdown {
+    font-size: 6px;
+  }
+  #tbodyUser tr .destroy {
+    margin-left: -20px;
+    bottom: 0;
+    font-size: 20px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+  }
+  #tbodyContractor tr .destroy {
+    margin-left: -20px;
+    bottom: 0;
+    font-size: 20px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    padding-left: 15px;
+  }
+  #tbodyStorage tr .destroy {
+    margin-left: -20px;
+    bottom: 0;
+    font-size: 20px;
+    margin-top: 19px;
+    width: 0;
+    height: 0;
+    padding-left: 20px;
+  }
+  .modal-content input[type='number'] {
+    font-size: 7px;
+  }.modal-content input[type='text'] {
+    font-size: 7px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+  html {
+    font-size: 6px;
+  }
+
+  .modal a {
+    font-size: 6px;
+  }
+  .select-wrapper input.select-dropdown {
+    font-size: 5px;
+  }
+  .dropdown-content li span{
+    font-size: 12px;
+  }
+  #tbodyUser tr .destroy {
+    margin-left: -20px;
+    bottom: 0;
+    font-size: 20px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+  }
+  #tbodyContractor tr .destroy {
+    margin-left: -20px;
+    bottom: 0;
+    font-size: 20px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    padding-left: 15px;
+  }
+  #tbodyStorage tr .destroy {
+    margin-left: -20px;
+    bottom: 0;
+    font-size: 20px;
+    margin-top: 15px;
+    width: 0;
+    height: 0;
+    padding-left: 20px;
+  }
+  .datepicker-footer {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 405px) and (max-width: 720px) {
+  html {
+    font-size: 8px;
+  }
+  #tbodyUser tr .destroy {
+    margin-left: -20px;
+    bottom: 0;
+    font-size: 20px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+  }
+  #tbodyContractor tr .destroy {
+    margin-left: -20px;
+    bottom: 0;
+    font-size: 20px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    padding-left: 15px;
+  }
+  #tbodyStorage tr .destroy {
+    margin-left: -20px;
+    bottom: 0;
+    font-size: 20px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    padding-left: 15px;
+  }
+  .btn-floating.btn-large {
+    top: 20px;
+    height: 30px;
+    width: 30px;
+  }
+  .btn-large i {
+    position: inherit;
+    font-size: 1.6rem;
+    bottom: 12px;
+  }
+#dropdown-sort {
+  width: 110px;
+  padding: 0;
+  font-size: 10px;
+  }
+  .select-wrapper input.select-dropdown {
+    font-size: 8px;
+  }
+  .stripped {
+    margin-left: -17px;
+  }
+  .modal a {
+    font-size: 10px;
+    width: 102px;
+    height: 33px;
+    text-align: center;
+  }
+  .addedProducts table {
+    line-height: 1;
+  }
+  #slide-out {
+    width: 230px;
+  }
+  #docList li {
+    padding: 0 20px 0 7px;
+  }
+  #slide-out ul li a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .btn-floating.btn-large {
+    top: 50px;
+    height: 30px;
+    width: 30px;
+  }
+  .btn-large i {
+    bottom: 12px;
+    position: inherit;
+  }
+
+}
+.datepicker-modal {
+  top: 0 !important;
+  max-height: 450px !important;
+  width: 520px !important;
+}
+.pika-single {
+  max-height: 84%;
+}
+
+
